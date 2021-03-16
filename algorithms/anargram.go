@@ -1,15 +1,14 @@
 package algorithms
 
 import (
-	"strings"
-	"sort"
 	"reflect"
+	"sort"
+	"strings"
 )
 
 type P map[string]int
 
 func AnargramCheck(str1 string, str2 string) bool {
-
 	if len(str1) != len(str2) {
 		return false
 	}

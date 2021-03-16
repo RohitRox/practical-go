@@ -1,9 +1,6 @@
 package algorithms
 
-import "fmt"
-
 func merge(a []int, b []int) []int {
-
 	size, i, j := len(a)+len(b), 0, 0
 	result := make([]int, size)
 
@@ -30,11 +27,9 @@ func merge(a []int, b []int) []int {
 	}
 
 	return result
-
 }
 
 func mSort(arr []int) []int {
-	fmt.Println(arr)
 	if len(arr) < 2 {
 		return arr
 	} else {
@@ -46,7 +41,6 @@ func mSort(arr []int) []int {
 
 		return merge(mSort(left), mSort(right))
 	}
-
 }
 
 func MergeSort(list []int) []int {

@@ -57,7 +57,5 @@ func (l *LinkedList) reverse() {
 		curr.next = prev
 		l.head = curr
 		prev = curr
-
 	}
-
 }

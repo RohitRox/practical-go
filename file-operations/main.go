@@ -11,7 +11,6 @@ import (
 // A program to remove comments and empty lines from Javascript file (sample.js)
 
 func main() {
-
 	file, err := ioutil.ReadFile("./sample.js")
 
 	if err != nil {
@@ -33,5 +32,4 @@ func main() {
 	f, _ := os.Create("out.js")
 	defer f.Close()
 	f.WriteString(f_str)
-
 }
